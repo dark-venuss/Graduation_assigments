@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-bg:rgb(194, 218, 87);
+    --color-green: rgb(47, 130, 45);
+    --color-light-green: rgb(121, 235, 115);
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.content-wrapper{
+    width: 100%;
+    max-width: 1440px;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    background-color: var(--color-bg) ;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+i{
+    font-size: 50px;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navigation{
+    background-color: var(--color-light-green);
+    ul{
+        text-align: center;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        li{
+            padding: 15px 30px; 
+            a{
+                text-decoration: none;
+                color: var(--color-green);
+            }
+        }
+        li:hover{
+            background-color: var(--color-green);
+            padding: 15px 30px;
+            transition: 0.3s ease-in-out;
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+h3{
+    padding:20px;
+    color: var(--color-green);
+    text-align: center;
+}
+
+.muz-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2{
+        writing-mode:vertical-lr;
+        text-orientation: upright;
+        font-size: 70px;
+        color: var(--color-green);
+        text-shadow: 3px 5px 5px rgb(50, 50, 50);
+    }
+}
+
+table tr, td, th{
+    border: 1px solid var(--color-green);
+    text-align: center;
+    padding: 10px;
+    th{
+        background-color: var(--color-green);
+        color: var(--color-light-green);
+        border: 1px solid var(--color-light-green);
+        width: 100px;
+    }
+    td{
+        font-size: 25px;
+        background-color: var(--color-light-green);
+        width: 100px;
+        a{
+            font-size: 18px;
+        }
+    }
+}
+table{
+    border-spacing: 0;
+    padding: 30px 0;
+}
+
+.footer{
+    background-color: var(--color-green);
+    text-align: center;
+    padding: 20px;
+    color: var(--color-light-green);
+}

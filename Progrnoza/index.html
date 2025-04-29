@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="images/clear.png">
+    <title>Vremenska prognoza</title>
+</head>
+<body>
+
+    <h1>Tusitička agencija "planinar"</h1>
+    <div class="nav">
+        <ul>
+            <li id="home"><a href="index.html">Početna</a></li>
+            <li><a href="oAutoru.html">O autoru</a></li>
+            <li><a href="Uputsvo.html">Uputstvo</a></li>
+        </ul>
+    </div>
+    <div class="sadrzaj">
+        <div class="sadrzajboja">
+            <div class="dropdown">
+                <label>Izaberite Grad</label>
+                <select id="grad" onchange="promeniGrad()">
+                    <option value="zrenjanin">Zrenjanin</option>
+                    <option value="beograd">Beograd</option>
+                    <option value="novi-sad">Novi Sad</option>
+                    <option value="vrsac">Vršac</option>
+                    <option value="secanj">Sečanj</option>
+                    <option value="cacak">Čačak</option>
+                    <option value="sombor">Sombor</option>
+                    <option value="kraljevo">Kraljevo</option>
+                    <option value="leskovac">Leskovac</option>
+                    <option value="despotovac">Despotovac</option>
+                </select>
+            </div>
+            <div>
+                <iframe id="frejm" src="https://naslovi.net/vremenska-prognoza/zrenjanin" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <footer> <p>&copy Turistička agencija "Planinar"</p></footer>
+        
+    <script src="script.js"></script>
+</body>
+</html>

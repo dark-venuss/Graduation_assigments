@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/9884bce6e4.js" crossorigin="anonymous"></script>
+    <title>MUZIKA</title>
+</head>
+<body>
+    <section class="top">
+        <div class="content-wrapper">
+        <h1>osnovna škola "Sonja Marinković"</h1>
+
+        <div class="navigation">
+            <ul>
+                <li id="list-active"><a href="/index.html">Početna</a></li>
+                <li><a href="/oAutoru.html">O autoru</a></li>
+                <li><a href="/uputsvo.html">Uputsvo</a></li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    
+    <section class="content">
+        <div class="content-wrapper">
+        <h3>Zvuci instrumenata</h3>
+        <div class="muz-wrapper">
+            <div>
+                <h2>Muzička kultura</h2>
+            </div>
+            <div class="tavle-wrapper">
+                <table id="tabela">
+                    <tr>
+                        <th>Naziv</th>
+                        <th>Slika</th>
+                        <th>Zvuk</th>
+                    </tr>
+
+                    <tr>
+                        <td>Gitara</td>
+                        <td><img src="https://seagullguitars.com/wp-content/uploads/2023/03/046386_S6_Original.jpg"></td>
+                        <td><i class="fa-solid fa-volume-high" onclick="pusti('gitara')"><audio id='gitara' src="/badPreformance_files/"></audio></i> <br> <a href="#" onclick="openPopup('/gitara.html')">Saznaj više</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Violina</td>
+                        <td><img src="https://vivaceviolins.com.au/wp-content/uploads/2021/03/Amati-Stainer-B-Violin.png"></td>
+                        <td><i class="fa-solid fa-volume-high"></i> <br> <a href="#" onclick="openPopup('/violina.html')">Saznaj više</a></td>
+                    </tr>
+                    </tr>
+
+                    <tr>
+                        <td>Klavir</td>
+                        <td><img src="https://impulsportal.net/wp-content/uploads/2015/11/klavir-ba2.jpg"></td>
+                        <td><i class="fa-solid fa-volume-high"></i><br> <a href="#" onclick="openPopup('/klavir.html')">Saznaj više</a></td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Bubnjevi</td>
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMrZQxr75mUDEMx0DAGyXAqNl6SXj1SZWM0w&s"></td>
+                        <td><i class="fa-solid fa-volume-high"></i> <br> <a href="#" onclick="openPopup('/bubnjevi.html')">Saznaj više</a></td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Harmonika</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Borsini_Bayan_P_2V.jpg"></td>
+                        <td><i class="fa-solid fa-volume-high"></i> <br> <a href="#" onclick="openPopup('/harmonika.html')">Saznaj više</a></td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Kontrafagot</td>
+                        <td><img src="https://www.shutterstock.com/image-illustration/contrabassoon-double-bassoon-symphony-orchestra-600w-2067150515.jpg"></td>
+                        <td><i class="fa-solid fa-volume-high"></i> <br> <a href="#" onclick="openPopup('/kontrafagot.html')">Saznaj više</a></td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="footer">
+        <div class="content-wrapper">
+        <footer>
+            <p class="copyright">Copyright © Osnovna škola "Sonja Marinković"</p>
+        </footer>
+    </div>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>

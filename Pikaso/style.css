@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #d3ef86;
+    color: #4b9d1f;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+.nav{
+    padding: 0;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        list-style: none;
+        li{
+            font-size: 20px;
+            background-color: #b6ff9f;
+            padding: 30px 100px;
+            a{
+                text-decoration: none;
+                color: #075d17;
+            }
+            
+        }
+        li:hover{
+            transition: .3s ease-in-out;
+            background-color: #539a3d;
+            a{
+                color: #c1dc75;
+            }
+        }
+        #home{
+            background-color: #ffbb00;
+            a{
+                color: #075d17;
+            }
+        }
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    .pikaso{
+        margin: auto 0;
+        text-orientation: upright;
+        font-size: 70px;
+        text-shadow: 5px 5px 5px rgb(75, 75, 75);
+        writing-mode: vertical-rl;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    width: 100%;
+    position: fixed;
+    background-color: #0a4a12;
+    color: #adbf63;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.swiper-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    .swiper-slide{
+        width: 800px;
+        height: 600px;
+        display: flex;
+        background-color: #b6ff9f;
+        img{
+            width:400px;
+            height: 100%;
+        }
+        .delo{
+            padding: 20px;
+            text-align: center;
+            h2{
+                font-size: 30px;
+                margin-top: 100px;
+                font-weight: 800;
+            }
+            h3{
+                font-size: 70px;
+                margin-top: 20px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.swiper-pagination{
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+    .tacka{
+        background-color: silver;
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+    .tacka:hover{
+        background-color: #539a3d;
+    }
+}
